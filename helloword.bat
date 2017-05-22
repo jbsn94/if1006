@@ -1,1 +1,2 @@
-echo "Oi"
+echo %1
+
