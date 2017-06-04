@@ -30,4 +30,8 @@ else
         
 fi
 
+sudo apt-get install maven
+
+sudo apt-get install junit
+
 echo "Implementação concluida."
