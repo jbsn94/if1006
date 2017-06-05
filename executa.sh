@@ -30,8 +30,16 @@ else
         
 fi
 
+sudo apt-get install default-jdk
+
+export JAVA_HOME='/usr/lib/jvm/default-java'
+
 sudo apt-get install maven
 
 sudo apt-get install junit
+
+cd DEV
+
+mvn clean install
 
 echo "Implementação concluida."
