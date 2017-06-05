@@ -30,6 +30,8 @@ else
         
 fi
 
+sudo apt-get update
+
 sudo apt-get install default-jdk
 
 export JAVA_HOME='/usr/lib/jvm/default-java'
