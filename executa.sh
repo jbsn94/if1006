@@ -40,7 +40,7 @@ sudo apt-get install maven
 
 sudo apt-get install junit
 
-echo '[INFO]: Install mysql and create user root and password ROOT'
+echo '[INFO]: Install mysql and create user root and password root'
 
 sudo apt-get install mysql-server
 
