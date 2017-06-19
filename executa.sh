@@ -70,10 +70,12 @@ sudo echo "sonar.host.url=http://localhost:9000" >> /opt/sonar-scanner-2.6.1/con
 
 SO_VERSION=`getconf LONG_BIT`
 
-/opt/sonarqube-5.6/bin/linux-x86-${SO_VERSION}/sonar.sh start
+sudo /opt/sonarqube-5.6/bin/linux-x86-${SO_VERSION}/sonar.sh start
 
 sudo cp settings.xml /etc/maven/
 
 cd DEV
 
 mvn clean install
+
+mvn sonar:sonar
