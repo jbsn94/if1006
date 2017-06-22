@@ -30,15 +30,7 @@ else
         
 fi
 
-apt-get update
-
-apt-get install default-jdk
-
 export JAVA_HOME='/usr/lib/jvm/default-java'
-
-apt-get install maven
-
-apt-get install junit
 
 mysql -u root -proot -e "CREATE DATABASE sonardb;"
 
