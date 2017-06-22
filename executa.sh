@@ -32,12 +32,6 @@ fi
 
 export JAVA_HOME='/usr/lib/jvm/default-java'
 
-mysql -u root -proot -e "CREATE DATABASE sonardb;"
-
-mysql -u root -proot -e "CREATE USER 'sonar'@'localhost' IDENTIFIED BY 'sonarpassword';"
-
-mysql -u root -proot -e "GRANT ALL PRIVILEGES ON sonardb.* TO 'sonar'@'localhost';"
-
 wget https://sonarsource.bintray.com/Distribution/sonarqube/sonarqube-5.6.zip -P /opt
 
 wget https://sonarsource.bintray.com/Distribution/sonar-scanner-cli/sonar-scanner-2.6.1.zip -P /opt
