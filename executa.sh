@@ -50,6 +50,14 @@ mysql -u root -proot -e "CREATE USER 'sonar'@'localhost' IDENTIFIED BY 'sonarpas
 
 mysql -u root -proot -e "GRANT ALL PRIVILEGES ON sonardb.* TO 'sonar'@'localhost';"
 
+sudo rm -rf /opt/sonarqube-5.6
+
+sudo rm -rf /opt/sonar-scanner-2.6.1
+
+sudo rm -rf /opt/sonarqube-5.6.zip
+
+sudo rm -rf /opt/sonar-scanner-2.6.1.zip
+
 sudo wget https://sonarsource.bintray.com/Distribution/sonarqube/sonarqube-5.6.zip -P /opt
 
 sudo wget https://sonarsource.bintray.com/Distribution/sonar-scanner-cli/sonar-scanner-2.6.1.zip -P /opt
@@ -93,6 +101,8 @@ sudo apt-get -y install \
     ca-certificates \
     curl \
     software-properties-common
+
+sudo apt-get install curl
 
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 
