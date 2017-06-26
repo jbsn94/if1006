@@ -119,6 +119,8 @@ sudo apt-get -y install docker-ce
 
 sudo docker build -t if1006petclinics .
 
+sudo docker login -u jbsn -p neto123
+
 sudo docker tag if1006petclinics jbsn/if1006petclinics
 
 sudo docker push jbsn/if1006petclinics
